@@ -1,0 +1,8 @@
+﻿a {
+    cursor: pointer;
+}
+.table td a{
+   display: block;
+   padding:0;
+   margin: 0;
+}
