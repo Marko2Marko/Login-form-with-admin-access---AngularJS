@@ -9,7 +9,7 @@
 				<th>Last modification date</th>
 			</tr>
 				
-				<tr ng-repeat="user in vm.allUsers" <!--ng-click="vm.editUser(user.id)" --> 		>
+				<tr ng-repeat="user in vm.allUsers"> <!--ng-click="vm.editUser(user.id)" --> 		
 					<td><a ng-href="#!/admin/edit/user/{{user.id}}">{{user.firstName}} {{user.lastName}} </a></td>
 					<td><a ng-href="#!/admin/edit/user/{{user.id}}">{{user.email}} </a></td>
 					<td><a  ng-href="#!/admin/edit/user/{{user.id}}">{{user.date | date : 'short' }}</a> </td>
