@@ -26,19 +26,19 @@
                     }
                 });
         }
-        // function save() {
-        //    // vm.dataLoading = true;
-        //     UserService.Update(vm.user)
-        //         .then(function (response) {
-        //             if (response.success) {
-        //                 FlashService.Success('update successful', true);
-        //                 $location.path('/');
-        //             } else {
-        //                 FlashService.Error(response.message);
-        //                 vm.dataLoading = false;
-        //             }
-        //         });
-        // }
+        function save() {
+                  vm.dataLoading = true;
+             UserService.Update(vm.user)
+                 .then(function (response) {
+                    if (response.success) {
+                       FlashService.Success('update successful', true);
+                         $location.path('/');
+                     } else {
+                         FlashService.Error(response.message);
+                         vm.dataLoading = false;
+                    }
+                 });
+         }
     }
 
 })();
